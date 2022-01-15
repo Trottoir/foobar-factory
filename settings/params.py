@@ -1,7 +1,8 @@
 from enum import Enum
 
-time_reducer_factor = 0.1
-bot_number_max = 10
+time_reducer_factor = 1
+foobar_to_build_in_one_cycle = 3
+max_bot = 30
 
 class Workshops(Enum):
     FOO_MINE = 1
