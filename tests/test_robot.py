@@ -3,9 +3,7 @@ from unittest import mock
 from classes.robot import Robot
 import unittest
 import time
-
 from settings import params
-
 
 time_reducer_factor = 0.1
 
@@ -22,13 +20,11 @@ class TestStringMethods(unittest.TestCase):
         # assert
         self.assertEqual(self.robot.foo, 1)
 
-
     def test_mint_bar(self):
         # compute
         self.robot.mint_bar()
         # assert
         self.assertEqual(self.robot.bar, 1)
-     
 
     @mock.patch("random.random")
     def test_assembly(self, random_call):
@@ -63,8 +59,8 @@ class TestStringMethods(unittest.TestCase):
         # prepare
         self.robot.foobar = 3
         random_call.return_value = 2
-       
-        # compute 
+
+        # compute
         self.robot.sell_foobar()
 
         # first assert
@@ -75,8 +71,8 @@ class TestStringMethods(unittest.TestCase):
         # prepare
         self.robot.balance = 6
         self.robot.foo = 12
-       
-        # compute 
+
+        # compute
         new_bot = self.robot.buy_bot(1)
 
         # first assert
@@ -86,7 +82,7 @@ class TestStringMethods(unittest.TestCase):
 
     def test_moove(self):
 
-        # compute 
+        # compute
         initial_time = time.time()
         self.robot.moove("Place A", "Place B")
         ending_time = time.time()
@@ -95,7 +91,6 @@ class TestStringMethods(unittest.TestCase):
         # assert
         self.assertTrue(total_time <= 6 * params.time_reducer_factor)
         self.assertTrue(total_time >= 3 * params.time_reducer_factor)
-
 
 
 if __name__ == "__main__":
