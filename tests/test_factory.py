@@ -15,17 +15,17 @@ class TestStringMethods(unittest.TestCase):
         # compute
         self.factory.batch_mining_foo(self.factory.robots[0])
         # assert
-        self.assertEqual(self.factory.robots[0].foo, 18)
+        self.assertEqual(self.factory.robots[0].foo, 15)
         self.factory.batch_mining_foo(self.factory.robots[0])
-        self.assertEqual(self.factory.robots[0].foo, 18)
+        self.assertEqual(self.factory.robots[0].foo, 15)
 
     def test_batch_mining_bar(self):
         # compute
         self.factory.batch_mining_bar(self.factory.robots[0])
         # assert
-        self.assertEqual(self.factory.robots[0].bar, 9)
+        self.assertEqual(self.factory.robots[0].bar, 3)
         self.factory.batch_mining_bar(self.factory.robots[0])
-        self.assertEqual(self.factory.robots[0].bar, 9)
+        self.assertEqual(self.factory.robots[0].bar, 3)
 
     def test_batch_assembly_foobar(self):
         self.factory.robots[0].foo = 0
@@ -36,9 +36,6 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(self.factory.robots[0].foobar, 3)
         self.factory.batch_assembly_foobar(self.factory.robots[0])
         self.assertEqual(self.factory.robots[0].foobar, 3)
-        
-
-
         self.factory.batch_assembly_foobar(self.factory.robots[0])
         self.assertEqual(self.factory.robots[0].foobar, 3)
     

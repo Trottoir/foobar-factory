@@ -1,4 +1,7 @@
-robot_names = ["MaxouBot","PoppyBot","Extreme Network Defense Machine",
+robot_names = [
+"MaxouBot",
+"PoppyBot",
+"Extreme Network Defense Machine",
 "Nuclear War Domination Bot",
 "Independent Pilot Bot",
 "Motorized Inspection Golem",
