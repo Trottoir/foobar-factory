@@ -1,7 +1,7 @@
 from enum import Enum
 
 # Ratio for time sleeps
-time_reducer_factor = 0
+time_reducer_factor = 1
 
 # Number of foobar to build in one cycle
 foobar_to_build_in_one_cycle = 3
