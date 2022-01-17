@@ -20,4 +20,4 @@ Project runs with the default parameters
 
 ### Launch coverage report
 
-`coverage run -m`
+`coverage report -m`
